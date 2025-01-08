@@ -8,14 +8,17 @@ from selenium.webdriver.chrome.service import Service #modulo de utilização de
 from selenium.webdriver.support import expected_conditions as EC #condição esperada
 from selenium.webdriver.support.ui import WebDriverWait #O Webdriver espera uma função
 
+#Criando instancias das opções do chrome
 Chrome_Options = Options() #instancia de Options
-DriverChrome = ChromeDriverManager().install() #instala automaticamente o chromedriver do chrome
-ChromeService = Service(DriverChrome) #roda o serviço do chrome driver
-
-#Chrome_Options.page_load_strategy = 'eager' #estratégia de carregamento de pagina será eager (carrega a parte interativa)
 #Chrome_Options.add_argument('--headless') #--headless é para executar em segundo plano
+Chrome_Options.add_argument("--disable-software-rasterizer") # Aumenta a performance
 Chrome_Options.add_argument('--incognito') #--incognito roda em guia anonima evitando de salvar senhas e cookies
 Chrome_Options.add_argument("--disable-gpu") #desabilita o uso de GPU
 Chrome_Options.add_argument("--disable-images") #desabilita o carregamento de imagens para rodar de forma mais rapida
 
+#Instalando e configurando
+DriverChrome = ChromeDriverManager().install() #instala automaticamente o chromedriver do chrome
+ChromeService = Service(DriverChrome) #roda o serviço do chrome driver
+
+#Iniciaizando com as opções definidas
 Chrome_driver = webdriver.Chrome(service= ChromeService, options = Chrome_Options)
