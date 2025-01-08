@@ -1,0 +1,1 @@
+#Arquivo que organiza a lógica de controle, como a orquestração entre as funções de Selenium e a interface gráfica.
