@@ -1,0 +1,1 @@
+#Arquivo que define a janela principal da interface gráfica, contendo a estrutura e os elementos do Tkinter.

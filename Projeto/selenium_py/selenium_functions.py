@@ -1,0 +1,1 @@
+#Arquivo contendo as funções que automatizam a interação com a plataforma KCMS.

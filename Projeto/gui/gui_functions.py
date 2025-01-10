@@ -1,0 +1,1 @@
+#Arquivo com funções relacionadas á interação do usuário com a interface gráfica
