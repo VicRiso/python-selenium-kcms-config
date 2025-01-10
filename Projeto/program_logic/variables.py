@@ -1,1 +1,0 @@
-#Arquivo para definir e armazenar variáveis de configuração e dados que serão utilizados ao longo do programa.

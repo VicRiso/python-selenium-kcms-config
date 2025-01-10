@@ -1,12 +1,9 @@
 #Arquivo responsável pelas configurações iniciais do Selenium
 
 from selenium import webdriver #Webdrive é o que faz a interação com o navegador(não especificado)
-from selenium.webdriver.common.by import By #Importa os localizadores de elementos (não especificado)
 from selenium.webdriver.chrome.options import Options  #Importa as opções do Chrome (para configuração)
 from webdriver_manager.chrome import ChromeDriverManager #Instala automaticamente o ChromeDriver e configura para o navegador
 from selenium.webdriver.chrome.service import Service #modulo de utilização de serviço do webdriver
-from selenium.webdriver.support import expected_conditions as EC #condição esperada
-from selenium.webdriver.support.ui import WebDriverWait #O Webdriver espera uma função
 
 #Criando instancias das opções do chrome
 Chrome_Options = Options() #instancia de Options

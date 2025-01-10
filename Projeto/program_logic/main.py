@@ -1,0 +1,1 @@
+#Arquivo principal que gerencia o fluxo do programa, chamando funções do Selenium e interagindo com a interface gráfica.
